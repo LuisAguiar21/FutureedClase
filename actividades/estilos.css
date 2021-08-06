@@ -1,0 +1,35 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.simbolo {
+    margin-left: -3px;
+}
+
+#Rojo {
+    color: #e10126;
+}
+
+#Amarillo {
+    color: #f9f601;
+}
+
+#Azul {
+    color: #086ab4;
+}
+
+.simbolo2 {
+    margin-left: -4px;
+}
+
+#Morado {
+    color: #b4017d;
+}
+
+#Verde {
+    color: #01a03f;
+}
+
+#Naranja {
+    color: #f1b100;
+}
