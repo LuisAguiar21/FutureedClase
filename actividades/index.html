@@ -6,11 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pastelería y repostería "Mi Dulce Pecado"</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;600;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
 
-</head>
 <body>
     <header>
         <nav>
@@ -20,8 +19,24 @@
             <a href="#">Formas de pago</a>
             <a href="#">Ordena aquí</a>
         </nav>
+        
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <img src="img/birthday-2338813_1920.jpg" alt="cake-pink-ss" style="width:100%">
+            </div>
+          
+            <div class="mySlides fade">
+              <img src="img/cupcakes-1133146_1920.jpg" alt="cupcakes-ss" style="width:100%">
+            </div>
+          
+            <div class="mySlides fade">
+              <img src="img/macarons-2548827_1920.jpg" alt="macarons" style="width:100%">
+            </div>
+        </div>
     </header>
-    <h2 id="especialidades">Nuestras especialidades</h2>
+    
+      <h2 id="especialidades">Nuestras especialidades</h2>
     <div class="producto">
         <img src="img/cupcakes.png" alt="cupcakes" class="img">
         <div class="contenido">
@@ -61,5 +76,21 @@
         </div>
     </div>
     
+    <script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}
+          slides[slideIndex-1].style.display = "block";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
 </body>
 </html>
